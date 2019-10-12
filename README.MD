@@ -2,7 +2,7 @@ Backend: localhost:5000
 Client: localhost:3000
 
 Instalar las dependencias para las dos aplicaciones usando el comando npm install.
-correr test coj el comando: npm test.
+correr test con el comando: npm test.
 
 Postman data test
 
