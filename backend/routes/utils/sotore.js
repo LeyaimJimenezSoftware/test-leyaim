@@ -13,7 +13,7 @@ const price = (items) => {
         total += tShirtPrice(items[prop])
         break;
       default:
-        console.log('Lo lamentamos.');
+        console.log('Lo lamentamos.')
     }
   }
   return `$ ${total.toFixed(2)}`

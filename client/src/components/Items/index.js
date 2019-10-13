@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import List from '../List/index'
-import './Items.css';
+import './Items.css'
 import Cart from '../Cart/index'
 
 const Items = () => {
@@ -43,21 +43,10 @@ const Items = () => {
 		}
   
     return (
-      <div className="list">
-        <table>
-          <thead>
-          	<tr>
-            	<th>id</th>
-            	<th>Code</th>
-            	<th>Name</th>
-          		<th>Price</th>
-							<th>Agregar</th>
-         	 	</tr>
-				 	</thead>
-					<tbody>
-          	{Object.keys(items).map((item, i) => <List key={i} id={i} code={item} name={items[item].name} price={items[item].price}  getItemsValues={getItemsValues}/> )}
-					</tbody>
-      	</table>
+      <div className="items">
+				<div className="list">
+          {Object.keys(items).map((item, i) => <List key={i} id={i} code={item} name={items[item].name} price={items[item].price}  getItemsValues={getItemsValues}/> )}
+				</div>
 				<div className="Cart">
 					<Cart key={1} cart={cart} quitItemsValues={quitItemsValues}></Cart>
 				</div>
